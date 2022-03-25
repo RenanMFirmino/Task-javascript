@@ -234,3 +234,203 @@
 //     }
 // }
 // console.log("Quantidade consoantes eh: "+cont);
+
+//Ex5:
+// let num=[-1,2,-3,4,-5,6,-7,-8,9,-10,11,-12,13,-14,-15,16,-17,-18,19,-20];
+// let par=[];
+// let impar=[];
+// let cont1=0;
+// let cont2=0;
+// console.log("20 numeros inteiros:")
+// for(let i=0;i<20;i++){
+//     if(num[i]%2===0){
+//         par[cont1]=parseInt(num[i]) ;
+//         cont1++;
+//     }else{
+//         impar[cont2]=parseInt(num[i]);
+//         cont2++;
+//     }
+//     console.log(num[i]);
+//     if(i===19){
+//         console.log("Numeros par:")
+//         for(let j=0;j<cont1;j++){
+            
+//             console.log(par[j]);
+//         }
+//         console.log("Numeros impar:")
+//         for(let k=0;k<cont2;k++){
+//             console.log(impar[k]);
+//         }
+//     }
+// }
+
+//Ex6:
+// let notas=[];
+// let alunos=[];
+// let media=[];
+// let cont=0;
+// for(let i=0;i<10;i++){
+//     alunos[i]=prompt("Nome do aluno:");
+//     let soma=0;
+//     for(let j=0;j<4;j++){
+//         notas[j]=parseFloat(prompt("Digite ah "+(parseInt(j)+1)+"º nota:"));
+//         soma+=notas[j];
+//     }
+//     media[i]=soma/4;
+//     if(media[i]>=7){
+//         cont++;
+//     }
+//     if(i===9){
+//         console.log("O numero de alunos com media maior que sete é: "+cont);
+//     }
+// }
+
+//Ex7:
+// let num=[2,5,-4,10,-7];
+// let soma=0;
+// let mult=0;
+// for(let i=0;i<5;i++){
+//     soma+=num[i];
+//     if(i===4){
+//         mult=(num[0]*num[01]*num[2]*num[3]*num[4]);
+//         console.log("A soma dos numeros eh: "+soma);
+//         console.log("A multiplicacao dos numeros eh: "+mult);
+//         console.log("Os numeros sao: "+num[0]+" "+num[01]+" "+num[2]+" "+num[3]+" "+num[4])
+//     }
+// }
+
+//Ex8:
+// let idade=[];
+// let altura=[];
+// for(let i=0;i<5;i++){
+//     alert("Pessoa "+(parseInt(i)+1));
+//     idade[i]=parseInt(prompt("Informe sua idade:"));
+//     altura[i]=parseFloat(prompt("Informe sua altura"));
+// }
+// console.log("Idade e altura em ordem inversa")
+// for(let j=4;j>=0;j--){
+//     console.log("Idade "+(parseInt(j)+1)+"º :"+idade[j]+" Altura "+(parseInt(j)+1)+"º :"+altura[j])
+// }
+
+//Ex9:
+// let terminou=true;
+// let pessoa=[];
+// let cont=0;
+// while (terminou) {
+//     pessoa[cont]=prompt("Digite seu nome:")
+//     let resp=  prompt("Deseja adicionar concorrente:")
+//     if(resp.toLowerCase() === "sim"){
+//         cont++;
+//     }else{
+//         terminou=false;
+//         alert("Terminou")
+//     }
+// }
+// let sorteado = Math.floor(Math.random() * cont);
+// console.log(pessoa[sorteado]+" foi sorteada para pagar o churrasco!")
+
+//Ex10:
+// let terminou=true;
+// let pessoa=[];
+// let cont=0;
+// while (terminou) {
+//     pessoa[cont]=prompt("Digite seu nome:")
+//     let resp=  prompt("Deseja adicionar concorrente:")
+//     if(resp.toLowerCase() === "sim"){
+//         cont++;
+//     }else{
+//         terminou=false;
+//         alert("Terminou")
+//     }
+// }
+// let sort1 = Math.floor(Math.random() * cont);
+// let p=pessoa[sort1];
+// pessoa.splice(sort1,1)
+// let sort2 = Math.floor(Math.random() * (parseInt(cont)-1 ));
+// console.log(p+" e "+ pessoa[sort2]+" foram sorteados para te dar um presente!")
+
+
+//Exercicios Função
+
+//Ex1:
+// function parimpar(num){
+//     if(num%2===0){
+//         alert("Numero "+num+ " eh par");
+//     }else{
+//         alert("Numero "+num+ " eh impar")
+//     }
+// }
+// let num =parseInt(prompt("Digite o numero"));
+// parimpar(num)
+
+//Ex2:
+// function soma(n1,n2){
+//     alert("A soma eh "+(n1+n2))
+//     return (n1+n2)
+// }
+// let num1=parseInt(prompt("Digite o primeiro numero:"));
+// let num2=parseInt(prompt("Digite o segundo numero:"));
+// result= soma(num1,num2)
+
+//Ex3:
+// function oposto(n1){
+//     alert("O numero oposto eh "+(n1*-1));
+//     return (n1*-1)
+// }
+// let n=parseInt(oposto(prompt("informe o numero desejado:")))
+
+//Ex4:
+// let num=[];
+// cont=0;
+// let result=true
+// while (result) {
+//     num[cont]=parseInt(prompt("Digite o numero:"));
+//     let resp=prompt("Deseja digitar outro numero ?");
+//     if(resp.toLowerCase()==="sim"){
+//         cont++;
+//     }else{
+//         result=false;
+//     }
+// }
+// function somapositiva(num){
+//     let soma=0;
+//     console.log(num);
+//     for(let i=0;i<=num.length;i++){
+//         if(num[i]>=0){
+//             soma += num[i];
+//         }
+//     }
+//     alert(soma);
+//     return soma;
+// }
+// let soma=somapositiva(num)
+
+//Ex5:
+// let num=[];
+// cont=0;
+// let result=true
+// while (result) {
+//     num[cont]=parseInt(prompt("Digite o numero:"));
+//     let resp=prompt("Deseja digitar outro numero ?");
+//     if(resp.toLowerCase()==="sim"){
+//         cont++;
+//     }else{
+//         result=false;
+//     }
+// }
+// function menor(num){
+//     let menor=0;
+//     console.log(num);
+//     for(let i=0;i<=num.length;i++){
+//         if(i===0){
+//             menor=num[i];
+//         }else{
+//             if(menor>num[i]){
+//                 menor=num[i];
+//             }
+//         }
+//     }
+//     alert("O numero menor eh: "+ menor);
+//     return menor;
+// }
+// let Menor=menor(num)
